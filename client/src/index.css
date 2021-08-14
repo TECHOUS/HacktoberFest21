@@ -1,0 +1,19 @@
+*{
+  padding: 0;
+  margin: 0;
+  font-family: 'Roboto Slab', serif;
+  scroll-behavior: smooth;
+}
+
+/* COLORS USED IN THE APPLICATION */
+:root{
+  --back1: #183D5D;
+  --back2: #5B6987;
+  --back3: #FF8AE2;
+  --back4: #5b6987;
+  --back5: #183d5d;
+  --back6: #9C4668;
+  --back7: #E0F0EC; 
+  --back8: #A4D394;
+  --back9: #f3f1ec;
+}

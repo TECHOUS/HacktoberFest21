@@ -1,0 +1,10 @@
+.sectionPage{
+    min-height: 100vh;
+    z-index: 0;
+}
+
+@media screen and (min-width: 965px){
+    .sectionPage{
+        padding-top: 83px;
+    }
+}

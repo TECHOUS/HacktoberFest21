@@ -1,0 +1,40 @@
+.loadingDiv{
+    text-align: center;
+    position: absolute;
+    background-color: #f3f1ec;
+    width: 100%;
+    height: 100%;
+}
+
+.loadingDiv > img{
+    margin-top: 80%;
+    width: 40%;
+}
+
+@media screen and (min-width: 510px){
+    .loadingDiv > img{
+        margin-top: 50%;
+    }
+}
+
+@media screen and (min-width: 650px){
+    .loadingDiv > img{
+        margin-top: 30%;
+    }
+}
+
+@media screen and (min-width: 965px){
+    .loadingDiv{
+        margin-top: 83px;
+    }
+    .loadingDiv > img{
+        margin-top: 20%;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    .loadingDiv > img{
+        margin-top: 10%;
+        width: 20%;
+    }
+}
