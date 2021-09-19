@@ -41,7 +41,7 @@ const Header = () => {
         <React.Fragment>
             <div id="mobileNav">
                 <div id="mobileNavLogo" onClick={toggle}>
-                    <img src="Icon.png" alt="hacktober fest logo" />
+                    <img src="Icon.svg" alt="hacktober fest logo" />
                 </div>
                 <div
                     id="mobileNavCross"
@@ -74,14 +74,18 @@ const Header = () => {
             </div>
             <div id="desktopNav">
                 <img
-                    src="Icon.png"
+                    src="Icon.svg"
                     alt="hacktober fest logo"
                     className="desktopHeader"
                     onClick={mainHandler}
+                    id="hack-logo"
                 />
-                <h1 className="desktopHeader" onClick={mainHandler}>
-                    Hacktober FEST Checker
-                </h1>
+                <img src="hackoberfest21New.svg"
+                className="desktopHeader"
+                alt="logo"
+                id="hack-header"
+                onClick={mainHandler}
+                />
                 <div className="desktopHeader rightHeader" onClick={faqHandler}>
                     FAQ
                 </div>

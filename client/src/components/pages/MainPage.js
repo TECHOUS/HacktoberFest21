@@ -6,15 +6,14 @@ const MainPage = () => {
     return (
         <div className="sectionPage" id="mainPage">
             <div className="mainPageContent">
-                <img src="mainLogo.svg" alt="hacktober fest logo" />
-                <span id="checker">Checker</span>
+                <img src="hackfest21New.svg" alt="hacktober fest logo" />
                 <h1>
                     Open source is changing the <br />
                     world - one pull request at a time.
                 </h1>
                 <p>
                     Hacktoberfest encourages participation in the open source
-                    community, which grows bigger every year. Complete the 2020
+                    community, which grows bigger every year. Complete the 2021
                     challenge and earn a limited edition T-shirt. Check your
                     progress <a href="#checkProgress">here</a>.
                 </p>
@@ -33,7 +32,7 @@ const MainPage = () => {
                     className="sideImages"
                 />
             </div>
-            <Disclaimer topValue='25vh'/>
+            <Disclaimer topValue='15vh'/>
         </div>
     );
 };

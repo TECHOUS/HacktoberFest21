@@ -5,15 +5,15 @@
     right: 0;
     background-color: var(--back1);
     border-radius: 45px;
-    padding: 5px;
+    padding: 10px;
     margin-right: 10px;
     margin-bottom: 10px;
     z-index: 2;
 }
 #mobileNavCross{
     background-color: var(--back1);
-    width: 80px;
-    height: 80px;
+    width: 82px;
+    height: 82px;
     position: fixed;
     bottom: 0;
     right: 0;
@@ -31,8 +31,8 @@
 }
 
 #mobileNavLogo > img{
-    width: 70px;
-    height: 70px;
+    width: 60px;
+    height: 60px;
 }
 .fa-search,
 .fa-question-circle,
@@ -83,10 +83,20 @@
     cursor: pointer;
 }
 #desktopNav > img{
-    width: 65px;
-    height: 65px;
-    padding: 5px;
     cursor: pointer;
+}
+#hack-logo{
+    width: 50px;
+    height: 60px;
+    padding-top: 10px;
+    padding-left: 5px;
+    padding-bottom: 5px;
+    padding-right: 0px;
+}
+#hack-header{
+    width: 400px;
+    height: 65px;
+    padding-top: 10px;
 }
 .desktopHeader{
     display: inline-block;
