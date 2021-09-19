@@ -1,6 +1,7 @@
 #mainPage{
     padding-top: 30%;
     min-height: 85vh;
+    background-color: var(--back16);
 }
 .mainPageContent{
     text-align: center;

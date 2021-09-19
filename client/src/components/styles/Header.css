@@ -4,12 +4,19 @@
     bottom: 0;
     right: 0;
     background-color: var(--back1);
-    border-radius: 45px;
+    border-radius: 200px;
     padding: 10px;
+    padding-left: 16px;
+    padding-right: 16px;
     margin-right: 10px;
     margin-bottom: 10px;
     z-index: 2;
 }
+#mobileNavLogo > img{
+    width: 50px;
+    height: 60px;
+}
+
 #mobileNavCross{
     background-color: var(--back1);
     width: 82px;
@@ -30,10 +37,6 @@
     margin-top: 5px;
 }
 
-#mobileNavLogo > img{
-    width: 60px;
-    height: 60px;
-}
 .fa-search,
 .fa-question-circle,
 .fa-user-plus{
@@ -73,7 +76,7 @@
     width: 100%;
     box-shadow: 0 0 .5em rgba(0, 0, 0, .5);
     z-index: 2;
-    background-color: white;
+    background-color: var(--back8);
 }
 #desktopNav > h1{
     font-size: 3em;
@@ -106,7 +109,8 @@
     font-size: 2em;
     padding: 20px;
     cursor: pointer;
-    color: var(--back4);
+    font-weight: 500;
+    color: var(--back13);
 }
 
 /* FORK ON GITHUB */

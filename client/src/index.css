@@ -1,7 +1,7 @@
 *{
   padding: 0;
   margin: 0;
-  font-family: 'Roboto Slab', serif;
+  font-family: 'Poppins', sans-serif;
   scroll-behavior: smooth;
 }
 
@@ -16,10 +16,12 @@
   --back7: #E0F0EC; 
   --back8: #A4D394;
   --back9: #f3f1ec;
+
   --back10: #f74700;
   --back11: #91a88c;
   --back12: #a88771;
   --back13: #b53a25;
   --back14: #677662;
   --back15: #2b3531;
+  --back16: #f4f0e1;
 }
