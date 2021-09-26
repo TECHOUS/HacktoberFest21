@@ -18,19 +18,46 @@ const MainPage = () => {
                     progress <a href="#checkProgress">here</a>.
                 </p>
             </div>
-            <div id="hacktoberFestLeft">
-                <img
-                    src="fest2018.jpg"
-                    alt="hacktober fest 18"
-                    className="sideImages"
-                />
-            </div>
-            <div id="hacktoberFestRight">
-                <img
-                    src="fest2019.jpg"
-                    alt="hacktober fest 19"
-                    className="sideImages"
-                />
+            <div id="hf-images-div">
+                <div id="img-div__right">
+                    <img
+                        src="fest2020.jpg"
+                        alt="hacktober fest 20"
+                        className="img-inline"
+                        id="right-first-img"
+                    />
+                    <img
+                        src="fest2020.jpg"
+                        alt="hacktober fest 20"
+                        className="img-right img-inline"
+                        id="right-center-img"
+                    />
+                    <img
+                        src="fest2020.jpg"
+                        alt="hacktober fest 20"
+                        className="img-inline"
+                        id="right-last-img"
+                    />
+                </div>
+                <div id="img-div__left">
+                    <img src="fest2019.jpg" 
+                        alt="left1" 
+                        className="img-inline"
+                        id="left-first-img"
+                    />
+                    <img
+                        src="fest2019.jpg"
+                        alt="hacktober fest 19"
+                        className="img-left img-inline"
+                        id="left-center-img"
+                    />
+                    <img 
+                        src="fest2019.jpg" 
+                        alt="left2" 
+                        className="img-inline"
+                        id="left-last-img"
+                    />
+                </div>
             </div>
             <Disclaimer topValue='15vh'/>
         </div>

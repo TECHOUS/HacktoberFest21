@@ -19,21 +19,60 @@
     font-size: 18px;
 }
 
-.sideImages{
-    width: 200px;
+/* SIDE IMAGES */
+#hf-images-div{
+    width: 100%;
+    margin-top: -50%;
     position: absolute;
-    height: 200px;
-    margin-top: -370px;
 }
-#hacktoberFestLeft{
-    left: 0;
+.img-inline{
+    display: block;
     cursor: pointer;
 }
-#hacktoberFestRight{
+.img-left{
+    height: 150px;
+    width: 200px;
+}
+#left-first-img,
+#left-last-img{
+    width: 170px;
+    height: 120px;
+}
+#left-first-img{
+    border-top-right-radius: 30px;
+}
+#left-last-img{
+    border-bottom-right-radius: 30px;
+}
+#left-center-img{
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+#img-div__right{
     float: right;
-    margin-right: 200px;
-    cursor: pointer;
-}   
+}
+.img-right{
+    height: 150px;
+    width: 80%;
+    margin-left: 20%;
+}
+#right-first-img
+,#right-last-img{
+    width: 65%;
+    margin-left: 35%;
+    height: 120px;
+}
+#right-first-img{
+    border-top-left-radius: 30px;
+}
+#right-last-img{
+    border-bottom-left-radius: 30px;
+}
+#right-center-img{
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
 
 /* for mi phone browsers */
 @media screen and (max-width: 360px) and (max-height: 562px){
@@ -43,8 +82,7 @@
 }
 
 @media screen and (max-width: 964px){
-    #hacktoberFestLeft,
-    #hacktoberFestRight{
+    #hf-images-div{
         display: none;
     }
 }
@@ -127,12 +165,6 @@
     #mainPage{
         padding-top: 7%;
     }
-    #hacktoberFestRight{
-        padding-right: 5%;
-    } 
-    #hacktoberFestLeft{
-        padding-left: 5%;
-    }
     .mainPageContent > p{
         padding-left: 300px;
         padding-right: 300px;
@@ -149,12 +181,7 @@
         padding-left: 30%;
         padding-right: 30%;
     }
-    .sideImages{
-        width: 280px;
-        height: 280px;
-        margin-top: -500px;
-    }
-    #hacktoberFestRight{
-        padding-right: 9%;
+    #hf-images-div{
+        margin-top: -35%;
     }
 }
