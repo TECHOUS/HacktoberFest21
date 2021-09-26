@@ -6,7 +6,7 @@ const NoData = ({ apiData, message }) => {
     if (Object.keys(apiData).length > 0) {
         return (
             <div className="noDataView">
-                <i className="fas fa-exclamation-circle fa-5x"></i>
+                <i className="fas fa-exclamation-circle fa-5x no-data-exc"></i>
                 <h3>{apiData.message!=null ? apiData.message : message}</h3>
             </div>
         );

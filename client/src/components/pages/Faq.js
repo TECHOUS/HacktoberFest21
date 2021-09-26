@@ -7,12 +7,13 @@ const Faq = () => {
     return (
         <div className="sectionPage" id="faq">
             <div className="faqLogoDiv">
-                <img src="mainLogo.svg" alt="faq logo" />
+                <img src="hackfest21FAQ.svg" alt="faq logo" />
+                {/*
                 <div id="FAQlogo">
                     <i className="fab fa-foursquare fa-2x"></i>
                     <i className="fab fa-autoprefixer fa-2x"></i>
                     <i className="fab fa-quora fa-2x"></i>
-                </div>
+                </div>*/}
             </div>
             <div className="questionsDiv">
                 <FaqList

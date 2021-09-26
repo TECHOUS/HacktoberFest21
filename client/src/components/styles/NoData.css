@@ -13,7 +13,9 @@
     font-size: 18px;
 }
 
-.fa-searchengin,
-.fa-exclamation-circle{
-    color: var(--back1);
+.fa-searchengin{
+    color: var(--back15);
+}
+.no-data-exc{
+    color: var(--back13);
 }

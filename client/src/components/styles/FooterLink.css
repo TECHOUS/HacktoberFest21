@@ -7,14 +7,14 @@
 .footerLink > a:link,
 .footerLink > a:visited{
     text-decoration: none;
-    color: var(--back5);
+    color: var(--back15);
     font-weight: bold;
 }
 .footerLink > i{
-    color: var(--back5);
+    color: var(--back13);
 }
 .footerLink > hr{
-    border: 1px solid var(--back8);
+    border: 1px solid var(--back14);
     margin-top: 5px;
     margin-bottom: 5px;
 }
