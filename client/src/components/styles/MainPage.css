@@ -184,4 +184,25 @@
     #hf-images-div{
         margin-top: -35%;
     }
+
+    .img-left{
+        height: 200px;
+        width: 290px;
+    }
+    #left-first-img,
+    #left-last-img{
+        width: 250px;
+        height: 150px;
+    }
+    .img-right{
+        height: 200px;
+        width: 290px;
+        margin-left: 290px;
+    }
+    #right-first-img
+    ,#right-last-img{
+        width: 250px;
+        margin-left: 56.5%;
+        height: 150px;
+    }
 }

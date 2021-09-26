@@ -21,7 +21,7 @@ const MainPage = () => {
             <div id="hf-images-div">
                 <div id="img-div__right">
                     <img
-                        src="fest2020.jpg"
+                        src="fest2020_1.jpg"
                         alt="hacktober fest 20"
                         className="img-inline"
                         id="right-first-img"
@@ -33,14 +33,14 @@ const MainPage = () => {
                         id="right-center-img"
                     />
                     <img
-                        src="fest2020.jpg"
+                        src="fest2020_2.jpg"
                         alt="hacktober fest 20"
                         className="img-inline"
                         id="right-last-img"
                     />
                 </div>
                 <div id="img-div__left">
-                    <img src="fest2019.jpg" 
+                    <img src="fest2019_1.jpg" 
                         alt="left1" 
                         className="img-inline"
                         id="left-first-img"
@@ -52,7 +52,7 @@ const MainPage = () => {
                         id="left-center-img"
                     />
                     <img 
-                        src="fest2019.jpg" 
+                        src="fest2019_2.jpg" 
                         alt="left2" 
                         className="img-inline"
                         id="left-last-img"
