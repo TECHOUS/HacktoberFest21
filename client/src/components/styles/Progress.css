@@ -1,9 +1,10 @@
 #checkProgress{
     padding-top: 50px;
+    background-color: var(--back17);
 }
 #checkProgress > h1{
     text-align: center;
-    color: var(--back2);
+    color: var(--back13);
 }
 
 .progressInputDiv{
@@ -16,7 +17,7 @@
     margin-right: 5px;
     padding: 10px;
     text-align: center;
-    background-color: var(--back3);
+    background-color: var(--back11);
     border: none;
     color: black;
     border-radius: 5px;
@@ -30,10 +31,11 @@
     font-size: 18px;
     margin-left: 5px;
     padding: 10px;
-    background-color: var(--back8);
+    background-color: var(--back10);
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    color: white;
 }
 
 /* for mi phone browsers */

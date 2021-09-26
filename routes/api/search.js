@@ -67,6 +67,7 @@ router.get('/search/mocktwelve', (req,res)=>{
     } else {
         res.json({
             "total_count": 12,
+            "valid_count": 5,
             "incomplete_results": false,
             "status": 200,
             "items": [

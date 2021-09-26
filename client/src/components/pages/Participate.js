@@ -20,76 +20,134 @@ const Participate = () => {
                     <List
                         list={[
                             'Hacktoberfest is open to everyone in our global community. Whether you’re a seasoned contributor or looking for projects to contribute to for the first time, you’re welcome to participate.',
-                            'Pull requests can be made in any GitHub-hosted repositories/projects. As long as the project is public and GitHub-hosted, your pull requests will count toward your participation.',
+                            'Pull requests can be made in any participating GitHub or GitLab hosted repository/project. Look for the \'hacktoberfest\' topic to know if a repository/project is participating in Hacktoberfest. Pull requests must be approved by a maintainer of the repository/project to count.',
                             'You can sign up anytime between October 1 and October 31. Just be sure to sign up on the official Hacktoberfest website for your pull requests to count.',
                         ]}
                     />
                 </ul>
             </div>
-            <ParticipateData
-                h="Participation rules"
-                para="To get a shirt, you must make four pull requests (PRs)
-                between October 1–31 in any time zone. Pull requests can be
-                to any public repository on GitHub, not just the ones
-                highlighted. The pull request must contain commits you made
-                yourself. If a maintainer reports your pull request as spam,
-                it will not be counted toward your participation in
-                Hacktoberfest. If a maintainer reports behavior that’s not
-                in line with the project’s code of conduct, you will be
-                ineligible to participate. This year, the first 75,000
-                participants can earn a T-shirt."
-            />
             <div className="dataDiv">
-                <ParticipateData
-                    h="Quality standards"
-                    para="In line with Hacktoberfest value #2 (Quantity is fun,
-                quality is key), we have provided examples of pull requests
-                that we consider to be low-quality contributions (which we
-                discourage)."
-                />
+                <h2>Participation rules</h2>
+                <hr className="hrUnderline" />
                 <ul>
                     <List
                         list={[
-                            'Pull requests that are automated (e.g. scripted opening pull requests to remove whitespace/fix typos/optimize images).',
-                            "Pull requests that are disruptive (e.g. taking someone else's branch/commits and making a pull request).",
-                            'Pull requests that are regarded by a project maintainer as a hindrance vs. helping.',
-                            "Something that's clearly an attempt to simply +1 your pull request count for October.",
+                            'Pull requests can be submitted to any opted-in repository on GitHub or GitLab.',
+                            'The pull request must contain commits you made yourself.',
+                            'If a maintainer reports your pull request as spam, it will not be counted toward your participation in Hacktoberfest.',
+                            'If a maintainer reports behavior that’s not in line with the project’s code of conduct, you will be ineligible to participate.',
+                            'To get a shirt, you must make four approved pull requests (PRs) on opted-in projects between October 1-31 in any time zone.',
+                            'This year, the first 55,000 participants can earn a T-shirt.'
                         ]}
                     />
                 </ul>
                 <p>
-                    Last but not least, one pull request to fix a typo is fine,
-                    but 5 pull requests to remove a stray whitespace is not.
+                    A repository/project is considered to be participating in Hacktoberfest if the 'hacktoberfest' topic is present and is accepting public 
+                    contributions via pull requests. An individual pull request can also be opted-in directly by adding the 'hacktoberfest-accepted' label.
+                </p>
+                <p>
+                    A pull request is considered approved once it has an overall approving review from maintainers, or has been merged by maintainers, or 
+                    has been given the 'hacktoberfest-accepted' label. A pull request with any label containing the word 'spam' or 'invalid' will be considered ineligible for Hacktoberfest.
                 </p>
             </div>
             <div className="dataDiv">
-                <h2>Important Resources for the Participation</h2>
-                <hr className="hrUnderline" />
+                <ParticipateData
+                    h="Quality standards"
+                    para="In line with Hacktoberfest value #2 (Quantity is fun, quality is key), 
+                    we have provided examples of the pull requests that we consider to be low quality 
+                    contributions (which we discourage and may be marked as spam by maintainers)."
+                />
                 <ul>
-                    <AnchorList
+                    <List
                         list={[
-                            'Understanding the GitHub flow',
-                            'How to Contribute to Open Source',
-                            'Git Cheatsheets',
-                            'An Introduction to Open Source',
-                            'How to write the perfect pull request',
-                            'How to write a good commit message',
-                            'JavaScript Resources',
-                        ]}
-                        links={[
-                            'https://guides.github.com/introduction/flow/',
-                            'https://opensource.guide/how-to-contribute/',
-                            'https://training.github.com/',
-                            'https://www.digitalocean.com/community/tutorial_series/an-introduction-to-open-source',
-                            'https://github.blog/2015-01-21-how-to-write-the-perfect-pull-request/',
-                            'https://dev.to/chrissiemhrk/git-commit-message-5e21',
-                            'https://github.com/TechOUs/Treasure-js',
+                            "Pull requests that are automated e.g. scripted opening pull requests to remove whitespace / fix typos / optimize images.",
+                            "Pull requests that are disruptive e.g. taking someone else's branch/commits and making a pull request.",
+                            "Pull requests that are regarded by a project maintainer as a hindrance vs. helping.",
+                            "Something that's clearly an attempt to simply +1 your pull request count for October.",
+                            "Last but not least, one pull request to fix a typo is fine, but 5 pull requests to remove a stray whitespace is not."
                         ]}
                     />
                 </ul>
             </div>
             <div className="dataDiv">
-                <h2>Hacktober Fest 2020 Contribution steps</h2>
+                <h2>Important Resources</h2>
+                <hr className="hrUnderline" />
+                <p>If you’re new to open source (which everyone was once!), you can take a look 
+                at the <a href="https://www.digitalocean.com/community/tutorial_series/an-introduction-to-open-source">Introduction to Open Source</a> tutorial series. To make your first contribution, 
+                it’s required to familiarize yourself with how to create a pull request.</p>
+                
+                <ParticipateData
+                    h="Beginners"
+                    para="The following resources share repositories that curate tasks for beginners:" />
+                <ul>
+                    <AnchorList 
+                        list={[
+                            "Awesome for Beginners",
+                            "Up For Grabs",
+                            "First Timers Only"
+                        ]}
+                        links={[
+                            "https://github.com/mungell/awesome-for-beginners",
+                            "https://up-for-grabs.net/#/",
+                            "https://www.firsttimersonly.com/"
+                        ]}
+                    />
+                </ul>
+
+                <ParticipateData
+                    h="Intermediates"
+                    para="Once you start feeling more comfortable, you can find more open source projects that can use your help through the following programs:" 
+                />
+                <ul>
+                    <AnchorList
+                        list={[
+                            "Pull Request Roulette",
+                            "CodeTriage",
+                            "24 Pull Requests (like Hacktoberfest, but in December)",
+                            "Visit this guide to find out more about how you can contribute to open source."
+                        ]}
+                        links={[
+                            "http://www.pullrequestroulette.com/",
+                            "https://www.codetriage.com/",
+                            "https://24pullrequests.com/",
+                            "https://opensource.guide/how-to-contribute/"
+                        ]}
+                    />
+                </ul>
+
+                <ParticipateData
+                    h="More"
+                    para="Don't forget to checkout these resources !!" 
+                />
+                <ul>
+                    <AnchorList
+                        list={[
+                            'GitHub Training Kit',
+                            'Understanding the GitHub flow',
+                            'Getting Started With GitLab',
+                            'An Introduction to Open Source',
+                            'How open source contributions can boost your career',
+                            'How to write the perfect pull request',
+                            'How to write a good commit message',
+                            'Github Desktop',
+                            'Community help in our Hacktoberfest Discord server'
+                        ]}
+                        links={[
+                            'https://github.github.com/training-kit/',
+                            'https://guides.github.com/introduction/flow/',
+                            'https://about.gitlab.com/get-started/',
+                            'https://www.digitalocean.com/community/tutorial_series/an-introduction-to-open-source',
+                            'https://opensource.com/article/19/5/how-get-job-doing-open-source',
+                            'https://github.blog/2015-01-21-how-to-write-the-perfect-pull-request/',
+                            'https://dev.to/chrissiemhrk/git-commit-message-5e21',
+                            'https://desktop.github.com/',
+                            'https://discord.gg/hacktoberfest'
+                        ]}
+                    />
+                </ul>
+            </div>
+            <div className="dataDiv">
+                <h2>Hacktober Fest 2021 Contribution steps</h2>
                 <hr className="hrUnderline" />
                 <ol>
                     <li className="listItem">
@@ -104,9 +162,9 @@ const Participate = () => {
                         any Open Source Project (Repositories) on GitHub.
                     </li>
                     <li className="listItem">
-                        See the above <a href="#participate">resources</a> for
+                        Checkout the above <a href="#participate">resources</a> for
                         more information. See the below GITHUB Repositories for
-                        contributing in HacktoberFest 2020.
+                        contributing in Hacktober Fest 2021.
                     </li>
                     <li className="listItem">
                         Secondly finalise your skill set and the programming
@@ -129,7 +187,7 @@ const Participate = () => {
                         that project.
                     </li>
                     <li className="listItem">
-                        You can also search for HacktoberFest20 or related tags
+                        You can also search for HacktoberFest or HacktoberFest21 or related tags
                         issues which you can solve.
                     </li>
                     <li className="listItem">
@@ -137,8 +195,8 @@ const Participate = () => {
                         you have raised your first Pull Request.
                     </li>
                     <li className="listItem">
-                        You can the see your progress on{' '}
-                        <a href="https://github.com/TechOUs/HacktoberFest20">HacktoberFest20 Checker</a> or on{' '}
+                        You can the check your progress also on{' '}
+                        <a href="#checkProgress">HacktoberFest21 Checker Website</a> or on the{' '}
                         <a href="https://hacktoberfest.digitalocean.com/">
                             Official Website.
                         </a>
@@ -146,37 +204,33 @@ const Participate = () => {
                 </ol>
             </div>
             <div className="dataDiv">
-                <h3>Hacktober Fest 2020 Updates</h3>
+                <h3>Hacktober Fest 2021 Updates</h3>
                 <hr className="hrUnderline" />
                 <p>
                     PRs count if:
                     <br />
                     &nbsp;&nbsp;<i className="far fa-hand-point-right"></i>{' '}
-                    Submitted during the month of October AND
+                    Submitted in a public repo with the <b>hacktoberfest</b> topic on GitHub/GitLab AND
+                    <br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;<i className="far fa-hand-point-right"></i>{' '}
+                    Submitted during the month of October 1-31 AND
                     <br />
-                    &nbsp;&nbsp;&nbsp;&nbsp;
-                    <i className="fas fa-grip-lines"></i> Submitted in a public
-                    repo AND (<br />
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <i className="fas fa-hand-point-right"></i> The PR is
-                    labelled as hacktoberfest-accepted by a maintainer OR
-                    <br />
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <i className="fas fa-hand-point-right"></i> Submitted in a
-                    repo with the hacktoberfest topic AND (<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <i className="fas fa-greater-than"></i> The PR has been
+                    approved OR
+                    <br/>
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     <i className="fas fa-greater-than"></i> The PR is merged OR
                     <br />
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <i className="fas fa-greater-than"></i> The PR has been
-                    approved
+                    <i className="fas fa-greater-than"></i> The PR is
+                    labelled as hacktoberfest-accepted by a maintainer
                 </p>
-                <p><a href="https://hacktoberfest.digitalocean.com/hacktoberfest-update">Source</a></p>
             </div>
             <div className="dataDiv">
                 <h3>
-                    <a href="https://github.com/TechOUs/HacktoberFest20Community">
-                        Hacktober Fest 20 Community
+                    <a href="https://github.com/TechOUs/HacktoberFest21Community">
+                        Hacktober Fest 21 Community
                     </a>
                 </h3>
                 <hr className="hrUnderline" />
@@ -186,36 +240,25 @@ const Participate = () => {
                 </p>
             </div>
             <div className="dataDiv">
-                <h3>Repositories you can Contribute</h3>
+                <h3>Repositories you can Contribute and win a chance to get in <a href="https://github.com/TECHOUS">TECHOUS</a> Open Source Organization</h3>
                 <hr className="hrUnderline" />
                 <ul>
                     <AnchorList
                         list={[
-                            'Algorithms',
-                            'Data-Structures',
-                            'Treasure JS',
-                            'Treasure JS APIs',
-                            'Treasure JS CLI',
-                            'RAINBOW',
-                            'MERN BOILERPLATE',
-                            'React-Calci',
-                            'React-Todo-App',
-                            'AutoJava',
+                            'AlgoHeist',
+                            'DSKaKhel',
+                            'HacktoberFest21Community',
+                            'HacktoberFest21',
+                            'And many more...'
                         ]}
                         links={[
-                            'https://github.com/TechOUs/Algorithms',
-                            'https://github.com/TechOUs/Data-Structures',
-                            'https://github.com/TechOUs/treasurejs.github.io',
-                            'https://github.com/TechOUs/TreasureApis',
-                            'https://github.com/TechOUs/Treasurejs-cli',
-                            'https://github.com/TechOUs/rainbow',
-                            'https://github.com/GauravWalia19/MernBoilerPlate',
-                            'https://github.com/GauravWalia19/React-Calci',
-                            'https://github.com/GauravWalia19/React-Todo-App',
-                            'https://github.com/GauravWalia19/AutoJava',
+                            'https://github.com/TECHOUS/AlgoHeist',
+                            'https://github.com/TECHOUS/DSKaKhel',
+                            'https://github.com/TECHOUS/HacktoberFest21Community',
+                            'https://github.com/TECHOUS/HacktoberFest21',
+                            'https://github.com/TECHOUS'
                         ]}
                     />
-                    <p>And many more...</p>
                 </ul>
             </div>
             <Disclaimer />

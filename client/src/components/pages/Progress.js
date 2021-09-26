@@ -18,7 +18,7 @@ const Progress = () => {
         setIsLoading(true);
         setApiData({});
 
-        fetch(`/api/v1/search?username=${username}`)
+        fetch(`/api/v1/search/mocktwelve?username=${username}`)
         .then(res => res.json())
         .then(res => {
             setApiData(res);
@@ -44,7 +44,7 @@ const Progress = () => {
         <React.Fragment>
             {isLoading && <Loading />}
             <div className="sectionPage" id="checkProgress">
-                <h1>Check your Progress for HacktoberFEST 20</h1>
+                <h1>Check your Progress</h1>
                 <div className="progressInputDiv">
                     <input type="text" value={username} onChange={changeHandler} placeholder="Github Username"/>
                     <button onClick={clickAPIHandler}>Check</button>
