@@ -20,8 +20,7 @@ router.get('/search', (req, res) => {
     } else {
         let url = process.env.url.replace('${username}', username);
         
-        axios
-            .get(
+        axios.get(
                 url
                 ,{
                     headers: {

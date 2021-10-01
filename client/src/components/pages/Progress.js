@@ -18,7 +18,7 @@ const Progress = () => {
         setIsLoading(true);
         setApiData({});
 
-        fetch(`/api/v1/search/mocktwelve?username=${username}`)
+        fetch(`/api/v1/search?username=${username}`)
         .then(res => res.json())
         .then(res => {
             setApiData(res);
