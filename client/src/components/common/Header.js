@@ -97,7 +97,7 @@ const Header = () => {
                 </div>
             </div>
             <div id="forkOnGithub">
-                <a href="https://github.com/TechOUs/HacktoberFest21">
+                <a href="https://github.com/TechOUs/HacktoberFest21" title="github">
                     <i className="fab fa-github"></i>
                 </a>
             </div>
