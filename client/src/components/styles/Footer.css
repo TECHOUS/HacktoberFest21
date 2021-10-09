@@ -8,7 +8,7 @@
 .techousFooter{
     padding: 5px;
 }
-.techousFooter > div > img{
+.techousFooter > div > picture > img{
     width: 60%;
 }
 .techousFooter > h2{
@@ -70,7 +70,7 @@
     .footer{
         padding: 40px;
     }
-    .techousFooter > div > img{
+    .techousFooter > div > picture > img{
         width: 50%;
     }
 }
@@ -80,7 +80,7 @@
         padding-left: 120px;
         padding-right: 120px;
     }
-    .techousFooter > div > img{
+    .techousFooter > div > picture > img{
         width: 40%;
     }
     #bottomFooter{

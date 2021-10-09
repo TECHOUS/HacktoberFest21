@@ -8,7 +8,10 @@ const Footer = () => {
             <div className="techousFooter footerContent">
                 <h2>Powered by</h2>
                 <div>
-                    <img src="techousPNG.png" alt="techous logo" />
+                    <picture>
+                        <source type="image/webp" srcSet="techousPNG.webp"/>
+                        <img src="techousPNG.png" alt="techous logo" />
+                    </picture>
                 </div>
             </div>
             <div className="techousLinks footerContent">
